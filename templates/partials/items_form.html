@@ -1,0 +1,30 @@
+<!-- templates/partials/playlists_form.html -->
+
+<fieldset>
+        <legend>Edit Item</legend>
+        <!-- TITLE -->
+        <div class='form-group'>
+            <label for='item-title'>Title</label><br>
+            <input class='form-control' id='playlist-title' type='text' name='title' value='{{ item.title }}'/>
+        </div>
+    
+        <!-- DESCRIPTION -->
+        <div class='form-group'>
+            <label for='description'>Description</label><br>
+            <input class='form-control' id='description' type='text' name='description' value='{{ item.description }}' />
+        </div>
+
+         <!-- DESCRIPTION -->
+        <div class='form-group'>
+                <label for='price'>Price</label><br>
+                <input class='form-control' id='price' type='text' name='price' value='{{ item.price }}' />
+        </div>
+    
+        <!-- DESCRIPTION -->
+        <div class='form-group'>
+            <label for='items-image'>Image</label><br/>
+            <p class='text-muted'>Add images using image address.</p>
+            <input class='form-control' id='items-image' name='images' rows='10' value='{{ item.image }}' />
+        </div>
+    </fieldset>
+    

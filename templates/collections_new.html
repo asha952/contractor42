@@ -1,0 +1,32 @@
+<!-- templates/collections_new.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<form method='POST' action='/inventory'>
+    <fieldset>
+    <legend>New Phones</legend>
+    <!-- TITLE -->
+    <p>
+        <label for='title'>Collection</label><br>
+        <input type='text' name='title' />
+    </p>
+    <p>
+        <label for='description'>Description</label><br>
+        <input type='text' name='description' />
+    </p>
+     <!-- DESCRIPTION -->
+    <p>
+        <label for='price'>Price</label><br>
+        <input type="text" name='price' />
+    <p>
+        <label for='image'>Picture Link</label><br>
+        <input type='text' name='image' />
+    </p>
+    </fieldset>
+
+    <!-- BUTTON -->
+    <p>
+        <button type='submit'>Save Item</button>
+    </p>
+</form>
+{% endblock %}
